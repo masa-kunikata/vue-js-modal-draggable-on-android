@@ -2,7 +2,7 @@
   <div class="wrap">
     <button @click="msg= ''; $modal.show('partial-draggable')">partial draggable</button>
 
-    <modal name="partial-draggable" draggable=".draggable-area">
+    <modal name="partial-draggable" draggable=".draggable-area" width="80%">
       <div class="draggable-area">
         draggable area<br>
         <button @click="msg = 'draggable area button clicked.'">button</button><br>
@@ -31,7 +31,7 @@
 
     <button @click="msg= ''; $modal.show('whole-draggable')">whole draggable</button>
 
-    <modal name="whole-draggable" :draggable="true">
+    <modal name="whole-draggable" :draggable="true" width="80%">
       draggable area<br>
       <button @click="msg = 'draggable area button clicked.'">button</button><br>
       <input type="button" value="input type=button" @click="msg = 'draggable area input type=button clicked.'"><br>
